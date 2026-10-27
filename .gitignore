@@ -1,0 +1,6 @@
+# Never commit level secrets or raw notes that contain them
+*.docx
+*.private
+sshkey*
+passwords*
+*.pass
