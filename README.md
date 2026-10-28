@@ -1,5 +1,7 @@
 # OverTheWire Wargames
 
+*My Linux command-line learning journey.*
+
 My notes and write-ups from working through the [OverTheWire](https://overthewire.org/wargames/) wargames, a set of hands-on challenges for learning Linux, the command line, and security fundamentals.
 
 ## Progress
