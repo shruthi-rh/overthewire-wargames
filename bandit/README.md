@@ -10,24 +10,42 @@ ssh -p 2220 banditN@bandit.labs.overthewire.org
 
 ## Progress
 
-| Level | Topic | Status | Notes |
-|-------|-------|--------|-------|
-| 0 → 1 | SSH login, reading a file | ✅ Done | [level-00-01](level-00-01.md) |
-| 1 → 2 | File named `-` | ✅ Done | [level-01-02](level-01-02.md) |
-| 2 → 3 | Spaces and dashes in filenames | ✅ Done | [level-02-03](level-02-03.md) |
-| 3 → 4 | Hidden files | ✅ Done | [level-03-04](level-03-04.md) |
-| 4 → 5 | Identifying file types | ✅ Done | [level-04-05](level-04-05.md) |
-| 5 → 6 | `find` with size/permission filters | ✅ Done | [level-05-06](level-05-06.md) |
-| 6 → 7 | Searching the whole filesystem by owner/group | ✅ Done | [level-06-07](level-06-07.md) |
-| 7 → 8 | `grep` for a keyword | ✅ Done | [level-07-08](level-07-08.md) |
-| 8 → 9 | `sort` + `uniq` to find a unique line | ✅ Done | [level-08-09](level-08-09.md) |
-| 9 → 10 | `strings` on binary data | ✅ Done | [level-09-10](level-09-10.md) |
-| 10 → 11 | Base64 decoding | ✅ Done | [level-10-11](level-10-11.md) |
-| 11 → 12 | ROT13 with `tr` | ✅ Done | [level-11-12](level-11-12.md) |
-| 12 → 13 | Hexdump + nested compression | ✅ Done | [level-12-13](level-12-13.md) |
-| 13 → 14 | SSH private keys | ✅ Done | [level-13-14](level-13-14.md) |
-| 14 → 15 | Sending data to a local port with `nc` | ✅ Done | [level-14-15](level-14-15.md) |
-| 15 → 16 | SSL/TLS with `openssl s_client` | 🔄 In progress | [level-15-16](level-15-16.md) |
+| Level   | Topic                                         | Status  | Notes                         |
+| ------- | --------------------------------------------- | ------- | ----------------------------- |
+| 0 → 1   | SSH login, reading a file                     | ✅ Done | [level-00-01](level-00-01.md) |
+| 1 → 2   | File named `-`                                | ✅ Done | [level-01-02](level-01-02.md) |
+| 2 → 3   | Spaces and dashes in filenames                | ✅ Done | [level-02-03](level-02-03.md) |
+| 3 → 4   | Hidden files                                  | ✅ Done | [level-03-04](level-03-04.md) |
+| 4 → 5   | Identifying file types                        | ✅ Done | [level-04-05](level-04-05.md) |
+| 5 → 6   | `find` with size/permission filters           | ✅ Done | [level-05-06](level-05-06.md) |
+| 6 → 7   | Searching the whole filesystem by owner/group | ✅ Done | [level-06-07](level-06-07.md) |
+| 7 → 8   | `grep` for a keyword                          | ✅ Done | [level-07-08](level-07-08.md) |
+| 8 → 9   | `sort` + `uniq` to find a unique line         | ✅ Done | [level-08-09](level-08-09.md) |
+| 9 → 10  | `strings` on binary data                      | ✅ Done | [level-09-10](level-09-10.md) |
+| 10 → 11 | Base64 decoding                               | ✅ Done | [level-10-11](level-10-11.md) |
+| 11 → 12 | ROT13 with `tr`                               | ✅ Done | [level-11-12](level-11-12.md) |
+| 12 → 13 | Hexdump + nested compression                  | ✅ Done | [level-12-13](level-12-13.md) |
+| 13 → 14 | SSH private keys                              | ✅ Done | [level-13-14](level-13-14.md) |
+| 14 → 15 | Sending data to a local port with `nc`        | ✅ Done | [level-14-15](level-14-15.md) |
+| 15 → 16 | SSL/TLS with `openssl s_client`               | ✅ Done | [level-15-16](level-15-16.md) |
+| 16 → 17 | SSH login, reading a file                     | ✅ Done | [level-00-01](level-00-01.md) |
+| 17 → 18 | File named `-`                                | ✅ Done | [level-01-02](level-01-02.md) |
+| 18 → 19 | Spaces and dashes in filenames                | ✅ Done | [level-02-03](level-02-03.md) |
+| 19 → 20 | Hidden files                                  | ✅ Done | [level-03-04](level-03-04.md) |
+| 20 → 21 | Identifying file types                        | ✅ Done | [level-04-05](level-04-05.md) |
+| 21 → 22 | `find` with size/permission filters           | ✅ Done | [level-05-06](level-05-06.md) |
+| 22 → 23 | Searching the whole filesystem by owner/group | ✅ Done | [level-06-07](level-06-07.md) |
+| 23 → 24 | `grep` for a keyword                          | ✅ Done | [level-07-08](level-07-08.md) |
+| 24 → 25 | `sort` + `uniq` to find a unique line         | ✅ Done | [level-08-09](level-08-09.md) |
+| 25 → 26 | `strings` on binary data                      | ✅ Done | [level-09-10](level-09-10.md) |
+| 26 → 27 | Base64 decoding                               | ✅ Done | [level-10-11](level-10-11.md) |
+| 27 → 28 | ROT13 with `tr`                               | ✅ Done | [level-11-12](level-11-12.md) |
+| 28 → 29 | Hexdump + nested compression                  | ✅ Done | [level-12-13](level-12-13.md) |
+| 29 → 30 | SSH private keys                              | ✅ Done | [level-13-14](level-13-14.md) |
+| 30 → 31 | Sending data to a local port with `nc`        | ✅ Done | [level-14-15](level-14-15.md) |
+| 31 → 32 | SSL/TLS with `openssl s_client`               | ✅ Done | [level-15-16](level-15-16.md) |
+| 32 → 33 | Sending data to a local port with `nc`        | ✅ Done | [level-14-15](level-14-15.md) |
+| 33 → 34 | SSL/TLS with `openssl s_client`               | ✅ Done | [level-15-16](level-15-16.md) |
 
 ## Themes so far
 

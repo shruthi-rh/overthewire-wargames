@@ -13,7 +13,7 @@ ls
 cat ./-
 ```
 
-Password for bandit2: `[redacted]`
+Password for bandit2: `PK8fYLZg2hnHSz83plBL1iEPKdD3QToB`
 
 ## What I learned
 

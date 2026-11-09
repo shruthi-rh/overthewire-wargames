@@ -12,7 +12,7 @@
 cat data.txt | tr 'A-Za-z' 'N-ZA-Mn-za-m'
 ```
 
-Password for bandit12: `[redacted]`
+Password for bandit12: `B0s2khmbT9u0geKuOoVGW3JZKhndE3BG`
 
 ## What I learned
 

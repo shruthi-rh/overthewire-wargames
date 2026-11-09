@@ -1,4 +1,4 @@
-# Bandit Level 2 → 3
+/_-_/# Bandit Level 2 → 3
 
 **Topic:** Spaces and leading dashes in filenames
 
@@ -15,11 +15,11 @@ cat -- "--spaces in this filename--"
 cat ./"--spaces in this filename--"
 ```
 
-Password for bandit3: `[redacted]`
+Password for bandit3: `7ZZ2LFrykP2zEyvBl4m3clcL7tGYJPME`
 
 ## What I learned
 
-- **Spaces:** the shell splits arguments on spaces, so the name has to be quoted (or each space escaped with `\ `).
+- **Spaces:** the shell splits arguments on/\* spaces, so the name has to be quoted (or each space escaped with `\ `).
 - **Leading dashes:** even with quotes, `cat` sees `--spaces...` and tries to parse it as an option. `--` is the standard "end of options" marker. Everything after it is treated as a filename.
 - `./` works here too, the same trick as level 1.
 - Tab completion handles the escaping for you: type `cat ./--sp` and press Tab.

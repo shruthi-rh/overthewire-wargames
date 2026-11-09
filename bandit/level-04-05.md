@@ -11,11 +11,10 @@ The `inhere` directory has several files named `-file00` to `-file09`. Only one 
 ```bash
 cd inhere
 file ./*
-# more generally, recursive:
 find . -type f -exec file {} + | grep "text"
 ```
 
-Password for bandit5: `[redacted]`
+Password for bandit5: `6C7h9GD8M6ai5nr7wo1RonrzFjj9yIrG `
 
 ## What I learned
 
@@ -26,5 +25,5 @@ Password for bandit5: `[redacted]`
 
 ## Dead ends
 
-- `cat`-ing each file one by one. The binary ones dump garbage into the terminal and can even mess up its display (`reset` fixes it).
+- `cat`-ing each file one by one. The binary ones dump garbage into the terminal and can even mess up its display (`reset` fixes it). I initially tried this and eventually landed at the result ultimately, but this isn't the best way to do it. So, after a couple of google searches later, I learned how to use the different flags that the file command had to offer as well as how to pipe its output to grep.
 - `file *` → the `-file0X` names were parsed as options.

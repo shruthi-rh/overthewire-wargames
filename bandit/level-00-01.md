@@ -14,7 +14,7 @@ ls
 cat readme
 ```
 
-Password for bandit1: `[redacted]`
+Password for bandit1: `6y2kwnwK6grgvwvpvLaa2T1cpFEKOhNR`
 
 ## What I learned
 
