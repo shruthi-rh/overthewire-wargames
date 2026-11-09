@@ -25,7 +25,7 @@ file <whatever-came-out>
 cat <final-file>
 ```
 
-Password for bandit13: `[redacted]`
+Password for bandit13: `qQYQiHOBPR8zR61qxYqX45quvihF2uzk`
 
 ## What I learned
 

@@ -4,23 +4,23 @@ Commands and concepts I keep coming back to. The levels where each one first cam
 
 ## Connecting
 
-| Command | What it does |
-|---------|--------------|
-| `ssh -p 2220 user@host` | Log in to a remote shell on a non-default port [0] |
-| `ssh -i keyfile -p 2220 user@host` | Log in with a private key instead of a password [13] |
-| `scp -P 2220 user@host:remote_file .` | Copy a file over SSH. **Capital `-P`** for the port [13] |
-| `chmod 600 keyfile` | Make a key readable only by its owner, which SSH requires [13] |
-| `icacls key /inheritance:r` + `/grant:r "$env:USERNAME:(R)"` | Windows equivalent of `chmod 600` for SSH keys [13] |
+| Command                                                      | What it does                                                   |
+| ------------------------------------------------------------ | -------------------------------------------------------------- |
+| `ssh -p 2220 user@host`                                      | Log in to a remote shell on a non-default port [0]             |
+| `ssh -i keyfile -p 2220 user@host`                           | Log in with a private key instead of a password [13]           |
+| `scp -P 2220 user@host:remote_file .`                        | Copy a file over SSH. **Capital `-P`** for the port [13]       |
+| `chmod 600 keyfile`                                          | Make a key readable only by its owner, which SSH requires [13] |
+| `icacls key /inheritance:r` + `/grant:r "$env:USERNAME:(R)"` | Windows equivalent of `chmod 600` for SSH keys [13]            |
 
 ## Looking around
 
-| Command | What it does |
-|---------|--------------|
-| `ls -la` | List everything, including hidden dotfiles, with permissions/owner/size [3] |
-| `file <path>` | Identify what a file really is from its contents [4] |
-| `cat ./-` | Read a file named `-` (otherwise treated as stdin) [1] |
-| `cat -- "--name with spaces--"` | `--` ends option parsing, and quotes keep spaces together [2] |
-| `ls -lt` | Sort by modification time, newest first [12] |
+| Command                         | What it does                                                                |
+| ------------------------------- | --------------------------------------------------------------------------- |
+| `ls -la`                        | List everything, including hidden dotfiles, with permissions/owner/size [3] |
+| `file <path>`                   | Identify what a file really is from its contents [4]                        |
+| `cat ./-`                       | Read a file named `-` (otherwise treated as stdin) [1]                      |
+| `cat -- "--name with spaces--"` | `--` ends option parsing, and quotes keep spaces together [2]               |
+| `ls -lt`                        | Sort by modification time, newest first [12]                                |
 
 ## `find`
 
@@ -36,24 +36,24 @@ find . -type f -exec file {} +                # run `file` on every result (batc
 
 ## Text processing
 
-| Command | What it does |
-|---------|--------------|
-| `grep "word" file` | Lines containing `word` [7] |
-| `grep -i / -n / -v / -r / -c` | ignore case / line numbers / invert / recursive / count |
-| `sort file \| uniq -u` | Lines that appear exactly once. `uniq` needs sorted input [8] |
-| `sort \| uniq -c \| sort -n` | Count occurrences of each line |
-| `strings file` | Printable text inside a binary file [9] |
-| `tr 'A-Za-z' 'N-ZA-Mn-za-m'` | ROT13 encode/decode [11] |
+| Command                       | What it does                                                  |
+| ----------------------------- | ------------------------------------------------------------- |
+| `grep "word" file`            | Lines containing `word` [7]                                   |
+| `grep -i / -n / -v / -r / -c` | ignore case / line numbers / invert / recursive / count       |
+| `sort file \| uniq -u`        | Lines that appear exactly once. `uniq` needs sorted input [8] |
+| `sort \| uniq -c \| sort -n`  | Count occurrences of each line                                |
+| `strings file`                | Printable text inside a binary file [9]                       |
+| `tr 'A-Za-z' 'N-ZA-Mn-za-m'`  | ROT13 encode/decode [11]                                      |
 
 ## Encodings and compression
 
-| Seen as | Tool |
-|---------|------|
-| Base64 (A–Z a–z 0–9 + /, ends in `=`) | `base64 -d` [10] |
-| Hexdump | `xxd -r` [12] |
-| `gzip compressed data` | `mv f f.gz && gzip -d f.gz` [12] |
-| `bzip2 compressed data` | `bzip2 -d f` [12] |
-| `POSIX tar archive` | `tar -xf f` [12] |
+| Seen as                               | Tool                             |
+| ------------------------------------- | -------------------------------- |
+| Base64 (A–Z a–z 0–9 + /, ends in `=`) | `base64 -d` [10]                 |
+| Hexdump                               | `xxd -r` [12]                    |
+| `gzip compressed data`                | `mv f f.gz && gzip -d f.gz` [12] |
+| `bzip2 compressed data`               | `bzip2 -d f` [12]                |
+| `POSIX tar archive`                   | `tar -xf f` [12]                 |
 
 Encoding ≠ encryption: base64, hex, and ROT13 have no key and anyone can reverse them.
 
@@ -67,11 +67,11 @@ Encoding ≠ encryption: base64, hex, and ROT13 have no key and anyone can rever
 
 ## Networking
 
-| Command | What it does |
-|---------|--------------|
-| `nc host port` | Raw TCP connection: stdin is sent, the reply is printed [14] |
-| `cat file \| nc localhost 30000` | Send a file's contents to a local service [14] |
-| `openssl s_client -connect host:port` | TLS connection by hand (like `nc` but encrypted) [15] |
+| Command                               | What it does                                                 |
+| ------------------------------------- | ------------------------------------------------------------ |
+| `nc host port`                        | Raw TCP connection: stdin is sent, the reply is printed [14] |
+| `cat file \| nc localhost 30000`      | Send a file's contents to a local service [14]               |
+| `openssl s_client -connect host:port` | TLS connection by hand (like `nc` but encrypted) [15]        |
 
 - `localhost` / `127.0.0.1` = this machine. A service bound there can't be reached from outside [14].
 

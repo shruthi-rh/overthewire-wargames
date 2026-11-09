@@ -12,7 +12,7 @@
 grep "millionth" data.txt
 ```
 
-Password for bandit8: `[redacted]`
+Password for bandit8: `VR1ljMayciFxbnUokuQmJFw6QC9VKtub`
 
 ## What I learned
 

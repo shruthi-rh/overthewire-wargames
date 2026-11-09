@@ -15,7 +15,7 @@ ls -la      # shows the hidden file
 cat ./<hidden-file-name>
 ```
 
-Password for bandit4: `[redacted]`
+Password for bandit4: `xzTXq1rDJQVVAzdv5cHq1TQytTWufAMq`
 
 ## What I learned
 

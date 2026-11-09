@@ -12,7 +12,7 @@
 strings data.txt | grep "="
 ```
 
-Password for bandit10: `[redacted]`
+Password for bandit10: `B0s2khmbT9u0geKuOoVGW3JZKhndE3BG`
 
 ## What I learned
 

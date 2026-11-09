@@ -22,15 +22,15 @@ ssh -i sshkey.private -p 2220 bandit14@bandit.labs.overthewire.org
 cat /etc/bandit_pass/bandit14
 ```
 
-Password for bandit14: `[redacted]`
+Password for bandit14: `aaWecNkG4FhxJQxz07uiwzVP6bJiYS65`
 
 ## What I learned
 
-- **Public-key authentication:** a key pair is a private key (kept secret, stays with you) and a public key (placed in the server's `~/.ssh/authorized_keys`). The server checks that you hold the matching private key without the key ever being sent. Whoever holds the private key *is* that user, as far as the server is concerned.
+- **Public-key authentication:** a key pair is a private key (kept secret, stays with you) and a public key (placed in the server's `~/.ssh/authorized_keys`). The server checks that you hold the matching private key without the key ever being sent. Whoever holds the private key _is_ that user, as far as the server is concerned.
 - `ssh -i <keyfile>` chooses which private key to use.
 - `scp` copies files over SSH. Note it's **`-P`** (uppercase) for the port, unlike `ssh -p`.
 - **SSH refuses keys that other users can read.** The key must be readable only by the owner (`600` = `rw-------`).
-- `/etc/bandit_pass/banditN` holds each user's password, readable only by that user, which is why you have to *become* bandit14 to read it.
+- `/etc/bandit_pass/banditN` holds each user's password, readable only by that user, which is why you have to _become_ bandit14 to read it.
 
 ## Dead ends
 

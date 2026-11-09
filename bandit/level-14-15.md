@@ -16,7 +16,7 @@ nc localhost 30000
 # then paste the password and press Enter
 ```
 
-Password for bandit15: `[redacted]`
+Password for bandit15: `pbLYuZtTg4MgaqfJx8jbA9gKKGqM68A7`
 
 ## What I learned
 

@@ -10,10 +10,10 @@ Somewhere under `inhere` (many subdirectories) is a file that is human-readable,
 
 ```bash
 cd inhere
-find . -type f -size 1033c ! -executable -exec file {} + | grep ASCII
+find . -type f -size 1033c -not -executable -exec file {} + | grep ASCII
 ```
 
-Password for bandit6: `[redacted]`
+Password for bandit6: `pXa26xhMWaC2SvDotA4r9EgZkulOeSBW`
 
 ## What I learned
 
@@ -26,4 +26,4 @@ Password for bandit6: `[redacted]`
 ## Dead ends
 
 - `-size 1033` without `c` returned nothing, because it was searching in 512-byte blocks.
-- Browsing the 20 `maybehereXX` directories by hand would have taken ages. This level is designed to push you towards `find`.
+- Browsing the 20 `maybehereXX` directories by hand would have taken ages (Lesson learnt from the previous level!).

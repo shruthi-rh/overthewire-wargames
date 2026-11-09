@@ -13,7 +13,7 @@ cat data.txt          # looks like random letters/digits ending in "="
 base64 -d data.txt
 ```
 
-Password for bandit11: `[redacted]`
+Password for bandit11: `pYfOY6HwUsDj5rL9UvyhU7MCmv8vN5Ro`
 
 ## What I learned
 
