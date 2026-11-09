@@ -1,14 +1,14 @@
 # OverTheWire Wargames
 
-*My Linux command-line learning journey.*
+_My Linux command-line learning journey._
 
 My notes and write-ups from working through the [OverTheWire](https://overthewire.org/wargames/) wargames, a set of hands-on challenges for learning Linux, the command line, and security fundamentals.
 
 ## Progress
 
-| Wargame | Status | Notes |
-|---------|--------|-------|
-| [Bandit](bandit/README.md) | In progress (on level 15 → 16) | Linux basics, file searching, encodings, SSH, networking |
+| Wargame                    | Status                    | Notes                                                                 |
+| -------------------------- | ------------------------- | --------------------------------------------------------------------- |
+| [Bandit](bandit/README.md) | ✅ Complete (levels 0–33) | Linux basics, file searching, encodings, SSH, networking, setuid, Git |
 
 ## Repo layout
 
@@ -31,7 +31,7 @@ overthewire-wargames/
 
 ## A note on spoilers
 
-OverTheWire asks players not to publish solutions, and the level passwords are the real spoiler. **No passwords are in this repo.** Wherever one would appear it's written as `[redacted]`, and I don't paste raw terminal output that contains them. The notes describe my approach and reasoning, not copy-paste answers.
+**Spoiler warning:** these notes include level passwords and full solutions. If you're playing Bandit yourself, try each level before reading its note.
 
 ## Resources
 

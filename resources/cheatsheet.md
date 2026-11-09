@@ -75,6 +75,37 @@ Encoding ≠ encryption: base64, hex, and ROT13 have no key and anyone can rever
 
 - `localhost` / `127.0.0.1` = this machine. A service bound there can't be reached from outside [14].
 
+## Users and permissions
+
+| Command / concept     | What it does                                                                |
+| --------------------- | --------------------------------------------------------------------------- |
+| `ls -l` showing `rws` | `s` in the owner's execute slot = setuid: runs as the file's owner [19, 26] |
+| `./setuid-bin <cmd>`  | Run a command with the binary owner's permissions [19, 26]                  |
+| `whoami`              | Which user this shell is actually running as [32]                           |
+| `/etc/passwd`         | Lists each user's login shell, which doesn't have to be bash [25]           |
+
+## Escaping restricted shells
+
+- `more` only pauses when the text doesn't fit, so **shrink the terminal** to keep it open [25]
+- In `more`: `v` opens the file in vi [25]
+- In vi: `:set shell=/bin/bash` then `:shell` starts a real shell [25]
+- A filter that uppercases input can't change symbols or `$` variables [32]
+
+## Git
+
+```bash
+git clone ssh://user@host:2220/path/to/repo   # clone over SSH, custom port      [27]
+git log                                       # commit history                   [28]
+git show <commit-id | tag>                    # what a commit/tag contains       [28, 30]
+git branch -a                                 # all branches, including remote   [29]
+git checkout <branch>                         # switch branch                    [29]
+git tag                                       # list tags                        [30]
+git add -f <file>                             # add a file .gitignore excludes   [31]
+git push origin master                        # send commits to the remote       [31]
+```
+
+- Deleting a secret in a new commit **doesn't** remove it from history [28].
+
 ## Bandit-specific
 
 - `/etc/bandit_pass/banditN`: each user's password, readable only by that user [13, 14]
